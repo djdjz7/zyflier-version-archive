@@ -1,0 +1,386 @@
+body {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--themeColor);
+  image-rendering: auto;
+  margin: 12px;
+  font-family: Quicksand, -apple-system, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+:root {
+  --themeColor: #f1f1f1;
+  --shadowDark: #cfcfcf;
+}
+
+p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+h2 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.contentArea {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 24px);
+  align-items: stretch;
+  max-width: 1200px;
+}
+
+.basicBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  border-radius: 12px;
+  padding: 12px;
+  background: #f3f3f3;
+  box-shadow: 20px 20px 60px var(--shadowDark), -20px -20px 60px #ffffff;
+  transition: 0.2s;
+  max-width: 1200px;
+}
+
+.primaryButton {
+  border-radius: 10px;
+  font-size: 17px;
+  padding: 0;
+  border: 0;
+  color: white;
+  transition: 0.4s;
+  padding-bottom: 3px;
+  background: linear-gradient(
+    90deg,
+    rgb(178, 146, 255) 0%,
+    rgba(141, 52, 255, 1) 100%
+  );
+  box-shadow: -4px -4px 10px -8px rgba(255, 255, 255, 1),
+    7px 7px 15px -7px rgba(141, 52, 255, 1);
+}
+
+.primaryButton:active {
+  transform: scale(0.97);
+  box-shadow: -4px -4px 10px -8px rgba(255, 255, 255, 1),
+    7px 7px 15px -7px rgba(141, 52, 255, 1);
+}
+
+.primaryButton:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(158, 117, 255) 0%,
+    rgb(120, 17, 255) 100%
+  );
+  box-shadow: -2px -2px 10px -8px rgba(255, 255, 255, 1),
+    10px 10px 25px -8px rgba(141, 52, 255, 1);
+}
+
+.secondaryButton {
+  border-radius: 10px;
+  font-size: 17px;
+  padding: 0;
+  border: 0;
+  color: black;
+  transition: 0.4s all;
+  padding-bottom: 3px;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 0%,
+    rgb(236, 236, 236) 100%
+  );
+  box-shadow: -4px -4px 10px -8px rgba(255, 255, 255, 1),
+    7px 7px 15px -6px rgb(172, 171, 171);
+}
+
+.secondaryButton:active {
+  transform: scale(0.97);
+  box-shadow: -4px -4px 10px -8px rgba(255, 255, 255, 1),
+    7px 7px 15px -10px rgb(172, 171, 171);
+}
+
+.secondaryButton:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(219, 219, 219) 0%,
+    rgb(209, 209, 209) 100%
+  );
+  box-shadow: -2px -2px 10px -8px rgba(255, 255, 255, 1),
+    10px 10px 25px -8px rgb(168, 168, 168);
+}
+
+.backButton button {
+  border-radius: 30px;
+  font-size: 17px;
+  padding: 0;
+  border: 0;
+  color: white;
+  transition: 0.4s all;
+  padding-bottom: 3px;
+  background: #000000;
+  box-shadow: -4px -4px 10px -8px rgba(255, 255, 255, 1),
+    7px 7px 15px -7px rgb(168, 168, 168);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.backButton button:active {
+  transform: scale(0.97);
+  box-shadow: -4px -4px 10px -8px rgba(255, 255, 255, 1),
+    7px 7px 15px -7px rgb(160, 160, 160);
+}
+
+.backButton button:hover {
+  cursor: pointer;
+  box-shadow: -2px -2px 10px -8px rgba(255, 255, 255, 1),
+    10px 10px 25px -8px rgb(168, 168, 168);
+}
+
+.images {
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 10px;
+  border-color: white;
+  box-shadow: -2px -2px 10px -8px rgba(255, 255, 255, 1),
+    10px 10px 25px -8px rgb(168, 168, 168);
+}
+
+a {
+  transition: 0.2s;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgba(141, 52, 255, 1);
+}
+a:hover {
+  text-shadow: 0px 0px 10px rgba(141, 52, 255, 1);
+}
+a:active {
+  text-decoration: none;
+  color: rgba(141, 52, 255, 1);
+}
+a:visited {
+  text-decoration: none;
+  color: rgba(141, 52, 255, 1);
+}
+
+.leftAlignedBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  border-radius: 12px;
+  padding: 12px;
+  background: #f3f3f3;
+  box-shadow: 20px 20px 60px var(--shadowDark), -20px -20px 60px #ffffff;
+  transition: 0.2s;
+  max-width: 1200px;
+}
+
+.leftAlignedBox:hover {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  box-shadow: 28px 28px 60px var(--shadowDark), -12px -12px 60px #ffffff;
+}
+
+.rightAlignedBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  border-radius: 12px;
+  padding: 12px;
+  background: #f3f3f3;
+  box-shadow: 20px 20px 60px var(--shadowDark), -20px -20px 60px #ffffff;
+  transition: 0.2s;
+  max-width: 1200px;
+}
+
+.rightAlignedBox:hover {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  box-shadow: 28px 28px 60px var(--shadowDark), -12px -12px 60px #ffffff;
+}
+
+.milestoneTag {
+  border-radius: 100px;
+  padding: 2px 8px 2px 8px;
+  position: relative;
+  background-color: #c471ed;
+  background-image: linear-gradient(to right, #12c2e9, #c471ed);
+  z-index: 1;
+  transition: 0.2s;
+}
+
+.milestoneTag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #c471ed;
+  background-image: linear-gradient(to right, #12c2e9, #c471ed);
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.2s;
+}
+
+.milestoneTag:hover::before {
+  opacity: 1;
+}
+
+.milestoneBanner {
+  border-radius: 8px;
+  align-self: stretch;
+  position: relative;
+  padding: 0px 8px;
+  background-color: #c471ed;
+  background-image: linear-gradient(to right, #12c2e9, #c471ed);
+  z-index: 1;
+}
+
+.milestoneBanner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #c471ed;
+  background-image: linear-gradient(to right, #12c2e9, #c471ed);
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  z-index: -1;
+}
+
+.stableTag {
+  border-radius: 100px;
+  background-color: #08aeea;
+  background-image: linear-gradient(to left, #08aeea, #2af598);
+  padding: 2px 8px 2px 8px;
+  z-index: 1;
+  position: relative;
+}
+
+.stableTag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #c471ed;
+  background-image: linear-gradient(to left, #08aeea, #2af598);
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.2s;
+}
+
+.stableTag:hover::before {
+  opacity: 1;
+}
+
+.deprecatedTag {
+  border-radius: 100px;
+  background-color: #ffe53b;
+  background-image: linear-gradient(90deg, #ffe53b 0%, #ff2525 74%);
+  padding: 2px 8px 2px 8px;
+  z-index: 1;
+  position: relative;
+}
+
+.deprecatedTag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffe53b;
+  background-image: linear-gradient(90deg, #ffe53b 0%, #ff2525 74%);
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.2s;
+}
+
+.deprecatedTag:hover::before {
+  opacity: 1;
+}
+
+.tag {
+  color: white;
+}
+
+h1.tag {
+  text-shadow: 0px 0px 2px white;
+}
+
+.openFlierBanner {
+  border-radius: 8px;
+  align-self: stretch;
+  position: relative;
+  padding: 0px 8px;
+  background-color: #2bc0e4;
+  background-image: linear-gradient(to right, #2bc0e4, #eaecc6);
+  z-index: 1;
+}
+
+.openFlierBanner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #2bc0e4;
+  background-image: linear-gradient(to right, #2bc0e4, #eaecc6);
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.topBar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  height: 64px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(241, 241, 241, 0.7);
+  box-shadow: 0px 0px 20px #aaaaaa;
+}
